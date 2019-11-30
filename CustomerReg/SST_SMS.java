@@ -11,12 +11,10 @@ public class SST_SMS
 	 public static String bceSunSoftSend(String mobileno,String msg)
 	    {
 	    	String uid="bcebti";
-	    	//String pwd="sunsoft@1234";
-	    	String pwd="909938537";
-	    	String sender="SUNSFT";
+	    	String pwd="";
+	    	String sender="";
 	    	
 	    	String url="http://bulksms.mysmsmantra.com:8080/WebSMS/SMSAPI.jsp?username="+uid+"&password="+pwd+"&sendername="+sender+"&mobileno="+mobileno+"&message="+msg;
-	    	//String url="http://smsapple.in/api/swsend.asp?username="+uid+"&password="+pwd+"&sendto="+mobileno+"&message="+msg+"&sender="+sender;
 	        return exeUrl(url);
 	    }
 	    static public String exeUrl(String urloc)
